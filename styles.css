@@ -61,7 +61,11 @@
       justify-items: center;
     }
 
-    .gallery-grid img {
+    .product-card {
+      text-align: center;
+    }
+
+    .product-card img {
       width: 100%;
       max-width: 300px;
       border: 3px solid #d4af37;
@@ -70,9 +74,19 @@
       transition: 0.3s;
     }
 
-    .gallery-grid img:hover {
+    .product-card img:hover {
       transform: scale(1.05);
       box-shadow: 0 0 10px #d4af37;
+    }
+
+    .product-card h3 {
+      color: #d4af37;
+      margin-top: 0.7rem;
+    }
+
+    .product-card p {
+      color: #ccc;
+      font-size: 1rem;
     }
 
     .display-container {
@@ -99,6 +113,13 @@
 
     .description h3 {
       color: #d4af37;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
     }
 
