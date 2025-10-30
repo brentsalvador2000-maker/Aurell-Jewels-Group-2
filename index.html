@@ -6,44 +6,56 @@
   <title>Aurellé Jewels</title>
 </head>
 <body>
-  <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="styles.css">
   <header>
     <h1>Aurellé Jewels</h1>
     <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <section class="bh" id="home">
+    <div class="bh-content">
+      <h2>Timeless Elegance, Redefined</h2>
+      <p>Discover the sparkle of Aurellé Jewels crafted with passion, precision, and perfection. Each piece tells a story of luxury and grace.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Aurellé Jewels was founded with a passion for elegance and timeless beauty. 
+      Our handcrafted jewelry pieces blend sophistication with modern design, 
+      making each item more than just an accessory it's a statement of confidence and grace. 
+      From rings to earrings, every creation is designed to make you shine brighter.
+    </p>
+  </section>
+
   <section id="gallery">
-    <h2 class="gallery-title">View Product Details</h2>
-
+    <h2>Our Collection</h2>
     <div class="gallery-grid">
-      <div class="product-card">
-        <img src="bracelet.jpg" 
-             alt="Gold Diamond Bracelet"
-             onclick="showDescription('Gold Diamond Bracelet', '₱15,499', 'Sophisticated meets modern. This two-tone bracelet features a stunning mix of gold and silver tones with intricate woven details. Designed to elevate any outfit — chic, elegant, and truly eye-catching.', this.src)">
+      <div class="product-card" onclick="showDescription('Gold Diamond Bracelet', '₱15,499', 'Sophisticated meets modern. This two-tone bracelet features a stunning mix of gold and silver tones with intricate woven details. Designed to elevate any outfit — chic, elegant, and truly eye-catching.', 'bracelet.jpg')">
+        <img src="bracelet.jpg" alt="Gold Diamond Bracelet">
         <h3>Gold Diamond Bracelet</h3>
-        <p>₱15,499</p>
+        <p>₱150,249</p>
       </div>
 
-      <div class="product-card">
-        <img src="earing.webp"
-             alt="Gold Hoop Earrings with Diamonds"
-             onclick="showDescription('Gold Hoop Earrings with Diamonds', '₱12,899', 'Add a touch of luxury to your everyday look! These elegant gold hoop earrings are lined with sparkling diamonds that shine with every move. Perfect for any occasion — classy, timeless, and effortlessly beautiful.', this.src)">
+      <div class="product-card" onclick="showDescription('Gold Hoop Earrings with Diamonds', '₱12,899', 'Add a touch of luxury to your everyday look! These elegant gold hoop earrings are lined with sparkling diamonds that shine with every move. Perfect for any occasion — classy, timeless, and effortlessly beautiful.', 'earing.webp')">
+        <img src="earing.webp" alt="Gold Hoop Earrings">
         <h3>Gold Hoop Earrings with Diamonds</h3>
-        <p>₱12,899</p>
+        <p>₱85,850</p>
       </div>
 
-      <div class="product-card">
-        <img src="ring.jpg" 
-             alt="Gold Ring"
-             onclick="showDescription('Gold Ring', '₱9,999', 'Simple yet stunning. This classic gold ring is crafted with a smooth, polished finish that never goes out of style. A perfect gift for yourself or a loved one — elegance in its purest form.', this.src)">
-        <h3>Gold Ring</h3>
-        <p>₱9,999</p>
+      <div class="product-card" onclick="showDescription('Classic Gold Ring', '₱9,999', 'Simple yet stunning. This classic gold ring is crafted with a smooth, polished finish that never goes out of style. A perfect gift for yourself or a loved one — elegance in its purest form.', 'ring.jpg')">
+        <img src="ring.jpg" alt="Gold Ring">
+        <h3>Classic Gold Ring</h3>
+        <p>₱29,999</p>
       </div>
     </div>
-
-    <div class="display-container" id="display-container" style="display:none;">
+    <div class="display-container" id="display-container">
       <img id="display-img" src="" alt="">
       <div class="description">
         <h3 id="display-title"></h3>
@@ -53,11 +65,18 @@
     </div>
   </section>
 
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:brentsalvador2000@gmail.com">aurellejewels@gmail.com</a></p>
+      <p>Location: Binmaley, Pangasinan, Philippines</p>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2025 Aurellé Jewels | All Rights Reserved</p>
   </footer>
-
-  <script>
+<script>
     function showDescription(title, price, text, imgSrc) {
       document.getElementById('display-title').textContent = title;
       document.getElementById('display-price').textContent = price;
@@ -67,6 +86,5 @@
       window.scrollTo({ top: document.getElementById('display-container').offsetTop - 50, behavior: 'smooth' });
     }
   </script>
-
 </body>
 </html>
