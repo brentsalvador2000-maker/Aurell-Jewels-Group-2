@@ -107,6 +107,89 @@
       line-height: 1.8;
     }
 
+    #mission-vision {
+      background-color: #000;
+      text-align: center;
+      padding: 5rem 2rem;
+      border-bottom: 1px solid #222;
+    }
+
+    #mission-vision h2 {
+      color: #d4af37;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .mv-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .mv-box {
+      background-color: #111;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(212,175,55,0.2);
+    }
+
+    .mv-box h3 {
+      color: #d4af37;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    .mv-box p {
+      color: #ccc;
+      font-size: 1.05rem;
+    }
+
+    #ceo {
+      background-color: #111;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    #ceo h2 {
+      color: #d4af37;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .ceo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .ceo-container img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #d4af37;
+    }
+
+    .ceo-info {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .ceo-info h3 {
+      color: #d4af37;
+      margin-bottom: 0.5rem;
+    }
+
+    .ceo-info p {
+      color: #ccc;
+      font-size: 1.05rem;
+    }
+
     #gallery h2 {
       text-align: center;
       color: #d4af37;
